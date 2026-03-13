@@ -2,15 +2,14 @@
 
 const PHOTOS = [
   { src: "/photos/dog-sunset.jpeg", alt: "Beach sunset" },
+  { src: "/photos/lighthouse-flag.jpeg", alt: "Lighthouse with flag" },
   { src: "/photos/dog-railroad.jpeg", alt: "Railroad adventure" },
   { src: "/photos/marina-view.jpeg", alt: "Marina" },
-  { src: "/photos/dog-beach-frisbee.jpeg", alt: "Beach vibes" },
   { src: "/photos/waterfall-bridge.jpeg", alt: "Waterfall bridge" },
   { src: "/photos/cp-train-snow.jpeg", alt: "Canadian Pacific train" },
   { src: "/photos/dog-beach-lifejacket.jpeg", alt: "Beach day with Finley" },
   { src: "/photos/santa-fe-station.jpeg", alt: "Santa Fe station" },
   { src: "/photos/steel-mill-night.jpeg", alt: "Steel mill at night" },
-  { src: "/photos/lighthouse-flag.jpeg", alt: "Lighthouse with flag" },
 ];
 
 export default function AboutPage() {
