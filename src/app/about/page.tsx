@@ -31,7 +31,7 @@ export default function AboutPage() {
             width: "100%",
             height: "100%",
             objectFit: "cover",
-            objectPosition: "60% 40%",
+            objectPosition: "75% 40%",
           }}
         />
         <div
