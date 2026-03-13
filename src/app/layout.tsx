@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import TrackFooter from "@/components/TrackFooter";
 
 export const metadata: Metadata = {
-  title: "Vinny Volatility | Algorithmic Trading",
+  title: "Ackovate Trading | Algorithmic Futures",
   description: "Live algorithmic trading performance - MNQ Momentum Strategy",
 };
 
@@ -16,7 +17,8 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navbar />
-        <main style={{ paddingTop: "64px" }}>{children}</main>
+        <main className="main-content" style={{ paddingTop: "64px" }}>{children}</main>
+        <TrackFooter />
       </body>
     </html>
   );

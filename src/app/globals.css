@@ -44,3 +44,54 @@ body {
   --color-background: var(--bg-primary);
   --color-foreground: var(--text-primary);
 }
+
+/* Mobile responsive */
+@media (max-width: 640px) {
+  .nav-bar {
+    padding: 0 16px !important;
+    flex-direction: column !important;
+    height: auto !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    gap: 6px !important;
+  }
+  .nav-links {
+    position: static !important;
+    right: auto !important;
+  }
+  .nav-links a {
+    padding: 6px 10px !important;
+    font-size: 12px !important;
+  }
+  .calendar-grid {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+  }
+  .photo-strip-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .photo-strip-item img {
+    max-height: 400px !important;
+  }
+  .stat-boxes {
+    gap: 4px !important;
+  }
+  .stat-box-hide-mobile {
+    display: none !important;
+  }
+  .about-stats-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .about-hero {
+    height: 240px !important;
+  }
+  .about-hero-title {
+    font-size: 28px !important;
+  }
+  .calendar-header-title {
+    font-size: 24px !important;
+  }
+  .main-content {
+    padding-top: 90px !important;
+  }
+}

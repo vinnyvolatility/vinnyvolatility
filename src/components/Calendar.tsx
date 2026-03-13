@@ -42,6 +42,12 @@ function getMonthKey(year: number, month: number): string {
   return `${year}-${String(month + 1).padStart(2, "0")}`;
 }
 
+// Parse "YYYY-MM-DD" as local date (not UTC) to avoid timezone shift
+function parseDate(dateStr: string): Date {
+  const [y, m, d] = dateStr.split("-").map(Number);
+  return new Date(y, m - 1, d);
+}
+
 export default function Calendar({
   title,
   subtitle,
@@ -73,12 +79,12 @@ export default function Calendar({
 
   // Filter data
   const filteredData: PnlData = {};
-  const exStart = excludeStart ? new Date(excludeStart) : null;
-  const exEnd = excludeEnd ? new Date(excludeEnd) : null;
-  const start = new Date(startDate);
+  const exStart = excludeStart ? parseDate(excludeStart) : null;
+  const exEnd = excludeEnd ? parseDate(excludeEnd) : null;
+  const start = parseDate(startDate);
 
   for (const [dateStr, dayData] of Object.entries(data)) {
-    const d = new Date(dateStr);
+    const d = parseDate(dateStr);
     if (d < start) continue;
     if (exStart && exEnd && d >= exStart && d <= exEnd) continue;
     filteredData[dateStr] = dayData;
@@ -106,7 +112,7 @@ export default function Calendar({
   // Group by month
   const months: Map<string, { year: number; month: number; days: Map<number, DayData> }> = new Map();
   for (const [dateStr, dayData] of Object.entries(filteredData)) {
-    const d = new Date(dateStr);
+    const d = parseDate(dateStr);
     const key = getMonthKey(d.getFullYear(), d.getMonth());
     if (!months.has(key)) {
       months.set(key, { year: d.getFullYear(), month: d.getMonth(), days: new Map() });
@@ -117,8 +123,8 @@ export default function Calendar({
   // Also include months between start and latest date even if no data
   const sortedDates = Object.keys(filteredData).sort();
   if (sortedDates.length > 0) {
-    const firstDate = new Date(startDate);
-    const lastDate = new Date(sortedDates[sortedDates.length - 1]);
+    const firstDate = parseDate(startDate);
+    const lastDate = parseDate(sortedDates[sortedDates.length - 1]);
     const cur = new Date(firstDate.getFullYear(), firstDate.getMonth(), 1);
     while (cur <= lastDate) {
       const key = getMonthKey(cur.getFullYear(), cur.getMonth());
@@ -134,8 +140,9 @@ export default function Calendar({
   return (
     <div style={{ maxWidth: "1400px", margin: "0 auto", padding: "40px 24px" }}>
       {/* Header */}
-      <div style={{ marginBottom: "32px" }}>
+      <div style={{ marginBottom: "32px", textAlign: "center" }}>
         <h1
+          className="calendar-header-title"
           style={{
             fontSize: "32px",
             fontWeight: 800,
@@ -151,17 +158,18 @@ export default function Calendar({
 
       {/* Stats */}
       <div
+        className="stat-boxes"
         style={{
           display: "flex",
           flexWrap: "wrap",
-          gap: "12px",
-          marginBottom: "36px",
+          gap: "6px",
+          marginBottom: "24px",
         }}
       >
         <StatBox
           label="Total P&L"
           value={formatPnlExact(totalPnl)}
-          detail={`${tradingDays} trading days`}
+          detail={`${tradingDays} days`}
           highlight
           positive={totalPnl >= 0}
         />
@@ -173,7 +181,7 @@ export default function Calendar({
         <StatBox
           label="Trade Win Rate"
           value={`${tradeWinRate}%`}
-          detail={`${totalWins}W / ${totalLosses}L of ${totalTrades}`}
+          detail={`${totalWins}W / ${totalLosses}L`}
         />
         <StatBox
           label="Avg Daily"
@@ -185,17 +193,20 @@ export default function Calendar({
           value={formatPnlExact(bestDay)}
           detail={bestDate}
           positive
+          hideOnMobile
         />
         <StatBox
           label="Worst Day"
           value={formatPnlExact(worstDay)}
           detail={worstDate}
           positive={false}
+          hideOnMobile
         />
       </div>
 
       {/* Calendar Grid */}
       <div
+        className="calendar-grid"
         style={{
           display: "grid",
           gridTemplateColumns: "repeat(auto-fit, minmax(420px, 1fr))",
@@ -344,7 +355,7 @@ function MonthCard({
                 }
 
                 const dateStr = `${year}-${String(month + 1).padStart(2, "0")}-${String(dayNum).padStart(2, "0")}`;
-                const dateObj = new Date(dateStr);
+                const dateObj = parseDate(dateStr);
                 const isExcluded =
                   excludeStart && excludeEnd && dateObj >= excludeStart && dateObj <= excludeEnd;
                 const dayData = days.get(dayNum);

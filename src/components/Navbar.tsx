@@ -14,6 +14,7 @@ export default function Navbar() {
 
   return (
     <nav
+      className="nav-bar"
       style={{
         position: "fixed",
         top: 0,
@@ -26,38 +27,25 @@ export default function Navbar() {
         zIndex: 100,
         display: "flex",
         alignItems: "center",
-        justifyContent: "space-between",
+        justifyContent: "center",
         padding: "0 32px",
       }}
     >
       <Link
         href="/"
         style={{
-          fontSize: "20px",
-          fontWeight: 800,
-          color: "var(--text-primary)",
+          fontSize: "15px",
+          fontWeight: 600,
+          color: "var(--text-secondary)",
           textDecoration: "none",
-          letterSpacing: "-0.5px",
-          display: "flex",
-          alignItems: "center",
-          gap: "10px",
+          letterSpacing: "1.5px",
+          textTransform: "uppercase",
         }}
       >
-        <span
-          style={{
-            background: "linear-gradient(135deg, #6366f1, #8b5cf6)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-          }}
-        >
-          VINNY
-        </span>
-        <span style={{ color: "var(--text-secondary)", fontWeight: 400 }}>
-          VOLATILITY
-        </span>
+        Vinny Volatility
       </Link>
 
-      <div style={{ display: "flex", gap: "4px" }}>
+      <div className="nav-links" style={{ position: "absolute", right: "32px", display: "flex", gap: "4px" }}>
         {NAV_ITEMS.map((item) => {
           const isActive = pathname === item.href;
           return (
