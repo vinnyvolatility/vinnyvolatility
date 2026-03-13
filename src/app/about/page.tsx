@@ -3,9 +3,6 @@
 const PHOTOS = [
   { src: "/photos/dog-sunset.jpeg", alt: "Beach sunset" },
   { src: "/photos/dog-railroad.jpeg", alt: "Railroad adventure" },
-  { src: "/photos/dog-beach-fetch.jpeg", alt: "Beach day" },
-  { src: "/photos/marina-boats.jpeg", alt: "Harbor" },
-  { src: "/photos/lighthouse.jpeg", alt: "Lighthouse" },
   { src: "/photos/marina-view.jpeg", alt: "Marina" },
   { src: "/photos/dog-beach-frisbee.jpeg", alt: "Beach vibes" },
 ];
@@ -31,7 +28,7 @@ export default function AboutPage() {
             width: "100%",
             height: "100%",
             objectFit: "cover",
-            objectPosition: "75% 40%",
+            objectPosition: "center 65%",
           }}
         />
         <div
