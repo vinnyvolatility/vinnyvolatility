@@ -5,6 +5,12 @@ const PHOTOS = [
   { src: "/photos/dog-railroad.jpeg", alt: "Railroad adventure" },
   { src: "/photos/marina-view.jpeg", alt: "Marina" },
   { src: "/photos/dog-beach-frisbee.jpeg", alt: "Beach vibes" },
+  { src: "/photos/waterfall-bridge.jpeg", alt: "Waterfall bridge" },
+  { src: "/photos/cp-train-snow.jpeg", alt: "Canadian Pacific train" },
+  { src: "/photos/dog-beach-lifejacket.jpeg", alt: "Beach day with Finley" },
+  { src: "/photos/santa-fe-station.jpeg", alt: "Santa Fe station" },
+  { src: "/photos/steel-mill-night.jpeg", alt: "Steel mill at night" },
+  { src: "/photos/lighthouse-flag.jpeg", alt: "Lighthouse with flag" },
 ];
 
 export default function AboutPage() {
@@ -192,9 +198,8 @@ export default function AboutPage() {
       </h2>
       <div
         style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))",
-          gap: "12px",
+          columns: "3 280px",
+          columnGap: "12px",
           marginBottom: "60px",
         }}
       >
@@ -204,13 +209,14 @@ export default function AboutPage() {
             style={{
               borderRadius: "12px",
               overflow: "hidden",
-              aspectRatio: "4/3",
               border: "1px solid var(--border)",
+              marginBottom: "12px",
+              breakInside: "avoid",
+              transition: "all 0.2s ease",
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = "scale(1.02)";
               e.currentTarget.style.boxShadow = "0 8px 24px rgba(0,0,0,0.1)";
-              e.currentTarget.style.transition = "all 0.2s ease";
             }}
             onMouseLeave={(e) => {
               e.currentTarget.style.transform = "scale(1)";
@@ -222,8 +228,7 @@ export default function AboutPage() {
               alt={photo.alt}
               style={{
                 width: "100%",
-                height: "100%",
-                objectFit: "cover",
+                display: "block",
               }}
             />
           </div>
