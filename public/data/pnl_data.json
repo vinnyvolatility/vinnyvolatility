@@ -220,5 +220,11 @@
     "trades": 7,
     "wins": 3,
     "losses": 4
+  },
+  "2026-04-10": {
+    "pnl": -386.94,
+    "trades": 7,
+    "wins": 2,
+    "losses": 5
   }
 }
