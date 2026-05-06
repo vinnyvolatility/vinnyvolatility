@@ -316,5 +316,11 @@
     "trades": 9,
     "wins": 4,
     "losses": 5
+  },
+  "2026-05-06": {
+    "pnl": -395.76,
+    "trades": 3,
+    "wins": 1,
+    "losses": 2
   }
 }
