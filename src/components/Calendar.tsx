@@ -250,6 +250,16 @@ function MonthCard({
 }) {
   const monthPnl = [...days.values()].reduce((s, d) => s + d.pnl, 0);
 
+  // Tick-bug attributable P&L for May 2026 (days 4-22 inclusive).
+  // Sum of every day's P&L in that window — shown only on the May 2026 card.
+  const isMay2026 = year === 2026 && month === 4;
+  let tickBugPnl = 0;
+  if (isMay2026) {
+    for (const [day, d] of days.entries()) {
+      if (day >= 4 && day <= 22) tickBugPnl += d.pnl;
+    }
+  }
+
   // Build calendar grid (Mon-Fri only)
   const firstDay = new Date(year, month, 1);
   const lastDay = new Date(year, month + 1, 0);
@@ -419,6 +429,21 @@ function MonthCard({
                           }}
                         >
                           {dayNum}
+                          {/* Tick data acquisition bug — affected May 4-22, 2026 */}
+                          {year === 2026 && month === 4 && dayNum >= 4 && dayNum <= 22 && (
+                            <span
+                              title="Tick data acquisition error"
+                              style={{
+                                color: "var(--red-text)",
+                                fontWeight: 700,
+                                marginLeft: "1px",
+                                fontSize: "12px",
+                                cursor: "help",
+                              }}
+                            >
+                              *
+                            </span>
+                          )}
                         </span>
                         {dayData && (
                           <span style={{ fontSize: "9px", fontWeight: 500, color: "var(--text-muted)" }}>
@@ -446,6 +471,31 @@ function MonthCard({
           ))}
         </tbody>
       </table>
+
+      {isMay2026 && (
+        <div
+          style={{
+            margin: "12px 16px 16px 16px",
+            padding: "10px 14px",
+            background: "rgba(234, 67, 53, 0.06)",
+            borderLeft: "3px solid var(--red-text)",
+            borderRadius: "4px",
+            fontSize: "12px",
+            lineHeight: 1.5,
+            color: "var(--text-secondary)",
+            fontStyle: "italic",
+          }}
+        >
+          <span style={{ color: "var(--red-text)", fontWeight: 700, fontStyle: "normal" }}>*</span>{" "}
+          Tick data was being acquired incorrectly creating false trade signals. The total P&amp;L
+          lost was{" "}
+          <strong style={{ color: "var(--red-text)", fontWeight: 700, fontStyle: "normal" }}>
+            {tickBugPnl >= 0 ? "+" : "-"}${Math.abs(tickBugPnl).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
+          </strong>{" "}
+          but this has not been taken out of the total P&amp;L but rather is used here as a
+          reference.
+        </div>
+      )}
     </div>
   );
 }
