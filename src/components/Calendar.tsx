@@ -491,8 +491,8 @@ function MonthCard({
           lost was{" "}
           <strong style={{ color: "var(--red-text)", fontWeight: 700, fontStyle: "normal" }}>
             {tickBugPnl >= 0 ? "+" : "-"}${Math.abs(tickBugPnl).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
-          </strong>{" "}
-          but this has not been taken out of the total P&amp;L but rather is used here as a
+          </strong>
+          . This has not been taken out of the total P&amp;L but rather is used here as a
           reference.
         </div>
       )}
