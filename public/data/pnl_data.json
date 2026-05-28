@@ -389,7 +389,7 @@
     "wins": 0,
     "losses": 1
   },
-  "2026-05-11": {
+  "2026-03-16": {
     "pnl": 0,
     "trades": 0,
     "wins": 0,
@@ -403,7 +403,14 @@
     "losses": 0,
     "no_trades": true
   },
-  "2026-03-16": {
+  "2026-05-28": {
+    "pnl": -260.4,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "no_trades": false
+  },
+  "2026-04-02": {
     "pnl": 0,
     "trades": 0,
     "wins": 0,
@@ -417,18 +424,11 @@
     "losses": 0,
     "no_trades": true
   },
-  "2026-04-02": {
+  "2026-05-11": {
     "pnl": 0,
     "trades": 0,
     "wins": 0,
     "losses": 0,
     "no_trades": true
-  },
-  "2026-05-28": {
-    "pnl": -66.6,
-    "trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "no_trades": false
   }
 }
