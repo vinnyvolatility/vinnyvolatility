@@ -487,12 +487,12 @@ function MonthCard({
           }}
         >
           <span style={{ color: "var(--red-text)", fontWeight: 700, fontStyle: "normal" }}>*</span>{" "}
-          Tick data was being acquired incorrectly creating false trade signals. The total P&amp;L
+          Tick data was being acquired incorrectly during this time period which created false trade signals. The total P&amp;L
           lost was{" "}
           <strong style={{ color: "var(--red-text)", fontWeight: 700, fontStyle: "normal" }}>
             {tickBugPnl >= 0 ? "+" : "-"}${Math.abs(tickBugPnl).toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}
           </strong>
-          . This has not been taken out of the total P&amp;L but rather is used here as a
+          . This has not been taken out of the overall P&amp;L but rather is used here as a
           reference.
         </div>
       )}
