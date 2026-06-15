@@ -480,7 +480,7 @@
     "losses": 0,
     "no_trades": true
   },
-  "2026-04-15": {
+  "2026-03-16": {
     "pnl": 0,
     "trades": 0,
     "wins": 0,
@@ -501,7 +501,14 @@
     "losses": 0,
     "no_trades": true
   },
-  "2026-03-16": {
+  "2026-06-15": {
+    "pnl": -248.9,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "no_trades": false
+  },
+  "2026-04-15": {
     "pnl": 0,
     "trades": 0,
     "wins": 0,
