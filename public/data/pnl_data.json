@@ -886,35 +886,77 @@
     "losses": 1,
     "no_trades": false
   },
-  "2026-07-08": {
-    "pnl": 0.0,
-    "trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "no_trades": false
-  },
-  "2026-10-23": {
+  "2026-10-20": {
     "pnl": 0,
     "trades": 0,
     "wins": 0,
     "losses": 0,
     "no_trades": true
   },
-  "2026-08-28": {
-    "pnl": 0.0,
-    "trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "no_trades": false
-  },
-  "2026-08-31": {
+  "2026-09-16": {
     "pnl": 0,
     "trades": 0,
     "wins": 0,
     "losses": 0,
     "no_trades": true
   },
-  "2026-10-13": {
+  "2026-10-05": {
+    "pnl": 0,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "no_trades": true
+  },
+  "2026-03-16": {
+    "pnl": 0,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "no_trades": true
+  },
+  "2026-10-22": {
+    "pnl": 0,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "no_trades": true
+  },
+  "2026-10-26": {
+    "pnl": 0,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "no_trades": true
+  },
+  "2026-08-13": {
+    "pnl": 0.0,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "no_trades": false
+  },
+  "2026-04-02": {
+    "pnl": 0,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "no_trades": true
+  },
+  "2026-04-03": {
+    "pnl": 0,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "no_trades": true
+  },
+  "2026-06-17": {
+    "pnl": 0.0,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "no_trades": false
+  },
+  "2026-07-29": {
     "pnl": 0,
     "trades": 0,
     "wins": 0,
@@ -928,14 +970,28 @@
     "losses": 0,
     "no_trades": true
   },
-  "2026-09-29": {
+  "2026-10-12": {
     "pnl": 0,
     "trades": 0,
     "wins": 0,
     "losses": 0,
     "no_trades": true
   },
-  "2026-10-05": {
+  "2026-05-11": {
+    "pnl": 0,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "no_trades": true
+  },
+  "2026-10-28": {
+    "pnl": 0,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "no_trades": true
+  },
+  "2026-09-30": {
     "pnl": 0,
     "trades": 0,
     "wins": 0,
@@ -956,187 +1012,12 @@
     "losses": 0,
     "no_trades": true
   },
-  "2026-10-20": {
+  "2026-10-21": {
     "pnl": 0,
     "trades": 0,
     "wins": 0,
     "losses": 0,
     "no_trades": true
-  },
-  "2026-09-15": {
-    "pnl": 0,
-    "trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "no_trades": true
-  },
-  "2026-10-06": {
-    "pnl": 0,
-    "trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "no_trades": true
-  },
-  "2026-03-16": {
-    "pnl": 0,
-    "trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "no_trades": true
-  },
-  "2026-09-16": {
-    "pnl": 0,
-    "trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "no_trades": true
-  },
-  "2026-10-02": {
-    "pnl": 0,
-    "trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "no_trades": true
-  },
-  "2026-04-15": {
-    "pnl": 0,
-    "trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "no_trades": true
-  },
-  "2026-04-03": {
-    "pnl": 0,
-    "trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "no_trades": true
-  },
-  "2026-09-01": {
-    "pnl": 0,
-    "trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "no_trades": true
-  },
-  "2026-05-13": {
-    "pnl": 0,
-    "trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "no_trades": true
-  },
-  "2026-07-29": {
-    "pnl": 0,
-    "trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "no_trades": true
-  },
-  "2026-08-13": {
-    "pnl": 0.0,
-    "trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "no_trades": false
-  },
-  "2026-07-16": {
-    "pnl": 0.0,
-    "trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "no_trades": false
-  },
-  "2026-10-26": {
-    "pnl": 0,
-    "trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "no_trades": true
-  },
-  "2026-07-28": {
-    "pnl": 0.0,
-    "trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "no_trades": false
-  },
-  "2026-09-25": {
-    "pnl": -422.12,
-    "trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "no_trades": false
-  },
-  "2026-05-11": {
-    "pnl": 0,
-    "trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "no_trades": true
-  },
-  "2026-10-22": {
-    "pnl": 0,
-    "trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "no_trades": true
-  },
-  "2026-09-14": {
-    "pnl": 0,
-    "trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "no_trades": true
-  },
-  "2026-10-28": {
-    "pnl": 0,
-    "trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "no_trades": true
-  },
-  "2026-10-14": {
-    "pnl": 0,
-    "trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "no_trades": true
-  },
-  "2026-09-02": {
-    "pnl": 0,
-    "trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "no_trades": true
-  },
-  "2026-10-08": {
-    "pnl": 0,
-    "trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "no_trades": true
-  },
-  "2026-10-15": {
-    "pnl": 0,
-    "trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "no_trades": true
-  },
-  "2026-04-02": {
-    "pnl": 0,
-    "trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "no_trades": true
-  },
-  "2026-06-17": {
-    "pnl": 0.0,
-    "trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "no_trades": false
   },
   "2026-10-29": {
     "pnl": 0,
@@ -1145,28 +1026,7 @@
     "losses": 0,
     "no_trades": true
   },
-  "2026-10-27": {
-    "pnl": 0,
-    "trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "no_trades": true
-  },
-  "2026-10-09": {
-    "pnl": 0,
-    "trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "no_trades": true
-  },
-  "2026-10-30": {
-    "pnl": 0,
-    "trades": 0,
-    "wins": 0,
-    "losses": 0,
-    "no_trades": true
-  },
-  "2026-10-21": {
+  "2026-08-31": {
     "pnl": 0,
     "trades": 0,
     "wins": 0,
@@ -1180,7 +1040,49 @@
     "losses": 0,
     "no_trades": true
   },
-  "2026-09-30": {
+  "2026-07-16": {
+    "pnl": 0.0,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "no_trades": false
+  },
+  "2026-10-14": {
+    "pnl": 0,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "no_trades": true
+  },
+  "2026-10-27": {
+    "pnl": 0,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "no_trades": true
+  },
+  "2026-10-02": {
+    "pnl": 0,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "no_trades": true
+  },
+  "2026-07-28": {
+    "pnl": 0.0,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "no_trades": false
+  },
+  "2026-07-08": {
+    "pnl": 0.0,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "no_trades": false
+  },
+  "2026-09-15": {
     "pnl": 0,
     "trades": 0,
     "wins": 0,
@@ -1194,6 +1096,34 @@
     "losses": 0,
     "no_trades": true
   },
+  "2026-10-15": {
+    "pnl": 0,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "no_trades": true
+  },
+  "2026-05-13": {
+    "pnl": 0,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "no_trades": true
+  },
+  "2026-10-09": {
+    "pnl": 0,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "no_trades": true
+  },
+  "2026-09-01": {
+    "pnl": 0,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "no_trades": true
+  },
   "2026-10-16": {
     "pnl": 0,
     "trades": 0,
@@ -1201,14 +1131,84 @@
     "losses": 0,
     "no_trades": true
   },
-  "2026-10-12": {
+  "2026-10-19": {
     "pnl": 0,
     "trades": 0,
     "wins": 0,
     "losses": 0,
     "no_trades": true
   },
-  "2026-10-19": {
+  "2026-08-28": {
+    "pnl": 0.0,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "no_trades": false
+  },
+  "2026-09-25": {
+    "pnl": -422.12,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "no_trades": false
+  },
+  "2026-10-08": {
+    "pnl": 0,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "no_trades": true
+  },
+  "2026-10-23": {
+    "pnl": 0,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "no_trades": true
+  },
+  "2026-09-02": {
+    "pnl": 0,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "no_trades": true
+  },
+  "2026-04-15": {
+    "pnl": 0,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "no_trades": true
+  },
+  "2026-10-30": {
+    "pnl": 0,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "no_trades": true
+  },
+  "2026-10-13": {
+    "pnl": 0,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "no_trades": true
+  },
+  "2026-10-06": {
+    "pnl": 0,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "no_trades": true
+  },
+  "2026-09-14": {
+    "pnl": 0,
+    "trades": 0,
+    "wins": 0,
+    "losses": 0,
+    "no_trades": true
+  },
+  "2026-09-29": {
     "pnl": 0,
     "trades": 0,
     "wins": 0,
